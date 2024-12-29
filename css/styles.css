@@ -1,0 +1,278 @@
+:root{
+    --IRIS-color: #4D5AE5;
+    --OCEAN-color: #404BBF;
+    --NAVYBLUE-color: #2E2F42;
+    --SLATE-color: #434455;
+    --LIGHTSLATE-color: #8E8F99;
+    --CORNFLOWER-color: #E7E9FC;
+    --CLOUD-color: #F4F4FD;
+    --GREY-color: #2E2F42;
+    --WHITE-color: #FFFFFF;
+    --DAIRY-color: #FCFCFC;
+}
+html, body{
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 1440px;
+    margin: 0;
+    padding: 0%
+}
+.title{
+    border: 1px solid var(--CORNFLOWER-color);
+    border-style: inset;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;   
+}
+.title .logo-one{
+    flex: 1;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--IRIS-color);
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-left: 20px;
+}
+.title .logo-one .studio{
+    color: var(--NAVYBLUE-color);
+}
+.title ul li{
+    list-style-type: none;
+}
+.title .list-one{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex: 2;
+    margin-left: -50px;
+}
+.title .list-one .page{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    text-decoration: none;
+    color: var(--NAVYBLUE-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.title .address{
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    margin-left: 300px;
+}
+.title .address .cont{
+    color: var(--SLATE-color);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.hero{
+    background-color: var(--NAVYBLUE-color);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1440px;
+    height: 600px;
+}
+.hero .hero-title{
+    width: 500px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    gap: 10px;
+    color: var(--WHITE-color);
+}
+.hero .button{
+    background-color: var(--IRIS-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px 15½;
+    width: 170px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    line-height: 0.04em;
+    color: var(--WHITE-color);
+}
+.first{
+    width: 1440px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first ul li{
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 265px;
+    height: 110px;
+    margin-left: 10px;
+}
+.first .first-list .first-h{
+    color: var(--NAVYBLUE-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.first .first-list .first-p{
+    color: var(--SLATE-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.second{
+    width: 1440px;
+    height: 730px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--CLOUD-color);
+    flex-direction: column;
+}
+.second .our-team{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+.second ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.second .team-list{
+    background-color: var(--WHITE-color);
+    list-style: none;
+    margin: 10px;
+}
+.second .team-list .team-text{
+    border: 1px solid var(--NAVYBLUE-color);
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.second .team-list .team-h{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--NAVYBLUE-color);
+}
+.second .team-list .team-p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--SLATE-color);
+    margin-top: -10px;    
+}
+.third{
+    width: 1440px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.third .our-port{
+    display: flex;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--NAVYBLUE-color);
+}
+.third ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.third .port-list{
+    margin: 10px;
+}
+.third .port-list .port-title{
+    border: 1px solid var(--CORNFLOWER-color);
+    margin-top: -5px;
+}
+.third .port-list .port-h{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--NAVYBLUE-color);  
+    margin: 10px;  
+}
+.third .port-list .port-p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--SLATE-color);
+    margin: 10px;
+}
+footer{
+    background-color: var(--NAVYBLUE-color);
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column;
+    width: 1440px;
+    height: 310px;
+}
+footer .logo-end{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--IRIS-color);
+    margin-left: 160px;
+}
+footer .logo-end .studio{
+    color: var(--CLOUD-color);
+}
+footer .end-p{
+    width: 265px;
+    height: 75px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--CLOUD-color);
+    margin-left: 160px;
+}
