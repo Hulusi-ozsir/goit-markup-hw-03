@@ -146,7 +146,7 @@ html, body{
 }
 .second{
     width: 1440px;
-    height: 730px;
+    padding: 120px 0;
     position: relative;
     display: flex;
     justify-content: center;
@@ -160,18 +160,23 @@ html, body{
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
 }
-.second ul{
+.second .team-main-list{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    gap: 24px;
 }
 .second .team-list{
     background-color: var(--WHITE-color);
     list-style: none;
-    margin: 10px;
+    width: calc(100%-72px)/4;
+    border-radius: 0px 0px 4px 4px;
 }
 .second .team-list .team-text{
     border: 1px solid var(--NAVYBLUE-color);
@@ -180,6 +185,7 @@ html, body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 32px 0;
 }
 .second .team-list .team-h{
     font-weight: 500;
@@ -200,35 +206,39 @@ html, body{
 }
 .third{
     width: 1440px;
-    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .third .our-port{
+    margin-bottom: 72px;
     display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
-    color: var(--NAVYBLUE-color);
+    color: var(--NAVYBLUE-color);    
 }
-.third ul{
+.third .port-main-list{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin: 10px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 .third .port-list{
-    margin: 10px;
+    width: calc(100%-72px)/4;
 }
 .third .port-list .port-title{
     border: 1px solid var(--CORNFLOWER-color);
-    margin-top: -5px;
+    padding: 32px 16px;
+    border-top: none;
+    margin-bottom: 8px;
 }
 .third .port-list .port-h{
     font-size: 20px;
@@ -246,7 +256,7 @@ html, body{
     color: var(--SLATE-color);
     margin: 10px;
 }
-footer{
+.end{
     background-color: var(--NAVYBLUE-color);
     display: flex;
     justify-content: center;
@@ -254,8 +264,9 @@ footer{
     flex-direction: column;
     width: 1440px;
     height: 310px;
+    padding: 100px 0;
 }
-footer .logo-end{
+.end .logo-end{
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -263,11 +274,11 @@ footer .logo-end{
     color: var(--IRIS-color);
     margin-left: 160px;
 }
-footer .logo-end .studio{
+.end .logo-end .studio{
     color: var(--CLOUD-color);
 }
-footer .end-p{
-    width: 265px;
+.end .end-p{
+    max-width: 265px;
     height: 75px;
     font-weight: 400;
     font-size: 16px;
