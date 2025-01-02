@@ -15,26 +15,35 @@ html, body{
     padding: 0;
     margin: 0;
 }
+body img{
+    display: block;
+}
 .container{
     display: block;
     position: relative;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 1440px;
-    margin: 0;
-    padding: 0%
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .title{
-    border: 1px solid var(--CORNFLOWER-color);
+    display: flex;
+    position: relative;
+}
+.title .container{
+    border: 1px solid #E7E9FC;
     border-style: inset;
     display: flex;
     position: relative;
-    justify-content: space-around;
     align-items: center;   
 }
+.title .nav{
+    display: flex;
+    align-items: center;
+}
 .title .logo-one{
-    flex: 1;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     text-decoration: none;
@@ -42,10 +51,14 @@ html, body{
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-left: 20px;
+    margin-right: 76px;
 }
 .title .logo-one .studio{
     color: var(--NAVYBLUE-color);
+}
+.title ul{
+    display: flex;
+    gap: 40px;
 }
 .title ul li{
     list-style-type: none;
@@ -53,9 +66,6 @@ html, body{
 .title .list-one{
     display: flex;
     position: relative;
-    justify-content: space-around;
-    flex: 2;
-    margin-left: -50px;
 }
 .title .list-one .page{
     display: flex;
@@ -67,12 +77,11 @@ html, body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
-.title .address{
+.title .address ul{
     display: flex;
-    flex: 2;
-    justify-content: space-around;
-    margin-left: 300px;
+    gap: 40px;
 }
 .title .address .cont{
     color: var(--SLATE-color);
@@ -89,10 +98,9 @@ html, body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 1440px;
-    height: 600px;
+    padding: 188px 0;
 }
-.hero .hero-title{
+.hero .container .hero-title{
     width: 500px;
     font-weight: 700;
     font-size: 56px;
@@ -101,34 +109,41 @@ html, body{
     text-align: center;
     gap: 10px;
     color: var(--WHITE-color);
+    max-width: 496px;
+    margin: 0 auto;
 }
-.hero .button{
-    background-color: var(--IRIS-color);
+.hero .container .button{
+    background-color: #4D5AE5;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px 15½;
-    width: 170px;
+    min-width: 170px;
     height: 56px;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
     line-height: 0.04em;
     color: var(--WHITE-color);
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
 }
 .first{
-    width: 1440px;
-    height: 350px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 120px 0;
 }
-.first ul li{
+.first .first-main-list{
+    display: flex;
+    gap: 24px;
+}
+.first .first-main-list .first-list{
     position: relative;
     display: inline-block;
     list-style: none;
-    width: 265px;
-    height: 110px;
-    margin-left: 10px;
+    width: calc((100%-72px)/4);
 }
 .first .first-list .first-h{
     color: var(--NAVYBLUE-color);
@@ -136,6 +151,7 @@ html, body{
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .first .first-list .first-p{
     color: var(--SLATE-color);
@@ -145,7 +161,6 @@ html, body{
     letter-spacing: 0.02em;
 }
 .second{
-    width: 1440px;
     padding: 120px 0;
     position: relative;
     display: flex;
@@ -175,12 +190,12 @@ html, body{
 .second .team-list{
     background-color: var(--WHITE-color);
     list-style: none;
-    width: calc(100%-72px)/4;
+    width: calc((100%-72px)/4);
     border-radius: 0px 0px 4px 4px;
 }
 .second .team-list .team-text{
     border: 1px solid var(--NAVYBLUE-color);
-    margin-top: -5px;
+    margin-bottom: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,11 +220,11 @@ html, body{
     margin-top: -10px;    
 }
 .third{
-    width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 120px 0;
 }
 .third .our-port{
     margin-bottom: 72px;
@@ -232,7 +247,7 @@ html, body{
     row-gap: 48px;
 }
 .third .port-list{
-    width: calc(100%-72px)/4;
+    width: calc((100%-72px)/4();
 }
 .third .port-list .port-title{
     border: 1px solid var(--CORNFLOWER-color);
@@ -256,17 +271,15 @@ html, body{
     color: var(--SLATE-color);
     margin: 10px;
 }
-.end{
+.end .container{
     background-color: var(--NAVYBLUE-color);
     display: flex;
     justify-content: center;
     align-items: normal;
     flex-direction: column;
-    width: 1440px;
-    height: 310px;
     padding: 100px 0;
 }
-.end .logo-end{
+.end .container .logo-end{
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -274,10 +287,10 @@ html, body{
     color: var(--IRIS-color);
     margin-left: 160px;
 }
-.end .logo-end .studio{
+.end .container .logo-end .studio{
     color: var(--CLOUD-color);
 }
-.end .end-p{
+.end .container .end-p{
     max-width: 265px;
     height: 75px;
     font-weight: 400;
