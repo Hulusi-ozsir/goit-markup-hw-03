@@ -33,6 +33,7 @@ body img {
   border-bottom: 1px solid #e7e9fc;
   display: flex;
   position: relative;
+  width: 1158px;
 }
 .title .container {
   border-bottom: 1px solid #e7e9fc;
@@ -40,6 +41,7 @@ body img {
   display: flex;
   position: relative;
   align-items: center;
+  width: 1158px;
 }
 .title .title-nav {
   display: flex;
@@ -78,11 +80,15 @@ body img {
   letter-spacing: 0.02em;
   padding: 24px 0;
 }
-.title .title-nav .add .add-list {
+.title .container .title-nav .add .add-main-list {
   display: flex;
   gap: 40px;
 }
-.title .add .add-list .cont {
+.title ul{
+    display: flex;
+    gap: 40px;
+}
+.title .container .title-nav .add .add-main-list .cont {
   color: var(--SLATE-color);
   font-size: 16px;
   line-height: 1.5;
@@ -250,7 +256,7 @@ body img {
   text-align: center;
   color: var(--NAVYBLUE-color);
 }
-.third .port-main-list {
+.third .container .port-main-list {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
@@ -258,10 +264,11 @@ body img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  width: calc((100%-72px) / 4);
+  width: calc((100%-72px)/4);
 }
-.third .port-main-list .port-list {
-  width: calc((100%-72px) / 4);
+.third .container .port-main-list .port-list {
+    width: calc((100%-72px)/4);
+    margin-bottom: 8px;
 }
 .third .container .port-main-list .port-title {
   padding: 32px 16px;
@@ -270,20 +277,22 @@ body img {
   margin-bottom: 8px;
 }
 .third .container .port-main-list .port-list .port-h {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--NAVYBLUE-color);
-  margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--NAVYBLUE-color);
+    margin: 10px;
+    margin-bottom: 8px;
 }
 .third .container .port-main-list .port-list .port-p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--SLATE-color);
-  margin: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--SLATE-color);
+    margin: 10px;
+    margin-bottom: 8px;
 }
 .end {
   padding: 100px 0;
