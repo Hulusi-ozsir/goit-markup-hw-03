@@ -80,13 +80,13 @@ body img {
   letter-spacing: 0.02em;
   padding: 24px 0;
 }
-.title .container .title-nav .add .add-main-list {
+.title .container .title-nav .add > ul {
   display: flex;
   gap: 40px;
 }
-.title ul{
-    display: flex;
-    gap: 40px;
+.title .container .title-nav .add .add-main-list {
+  display: flex;
+  gap: 40px;
 }
 .title .container .title-nav .add .add-main-list .cont {
   color: var(--SLATE-color);
@@ -139,6 +139,7 @@ body img {
   justify-content: center;
   align-items: center;
   padding: 120px 0;
+  width: calc((100%-72px) / 4);
 }
 .first .container .visual-hidden {
   visibility: hidden;
@@ -169,6 +170,7 @@ body img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  width: calc((100%-72px) / 4);
 }
 .first .first-list .first-p {
   color: var(--SLATE-color);
@@ -176,6 +178,7 @@ body img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: calc((100%-72px) / 4);
 }
 .second {
   padding: 120px 0;
@@ -219,6 +222,7 @@ body img {
   align-items: center;
   flex-direction: column;
   padding: 32px 0;
+  width: calc((100%-72px) / 4);
 }
 .second .container .team-main-list .team-list .team-h {
   font-weight: 500;
@@ -228,6 +232,7 @@ body img {
   text-align: center;
   color: var(--NAVYBLUE-color);
   margin-bottom: 8px;
+    width: calc((100%-72px)/4);
 }
 .second .container .team-main-list .team-list .team-p {
   font-weight: 400;
@@ -237,6 +242,7 @@ body img {
   text-align: center;
   color: var(--SLATE-color);
   margin-top: -10px;
+    width: calc((100%-72px)/4);
 }
 .third {
   display: flex;
@@ -264,35 +270,38 @@ body img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  width: calc((100%-72px)/4);
+  width: calc((100%-72px) / 4);
 }
 .third .container .port-main-list .port-list {
-    width: calc((100%-72px)/4);
-    margin-bottom: 8px;
+  width: calc((100%-72px) / 4);
+  margin-bottom: 8px;
 }
 .third .container .port-main-list .port-title {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
   margin-bottom: 8px;
+    width: calc((100%-72px)/4);
 }
 .third .container .port-main-list .port-list .port-h {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--NAVYBLUE-color);
-    margin: 10px;
-    margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--NAVYBLUE-color);
+  margin: 10px;
+  margin-bottom: 8px;
+    width: calc((100%-72px)/4);
 }
 .third .container .port-main-list .port-list .port-p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--SLATE-color);
-    margin: 10px;
-    margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--SLATE-color);
+  margin: 10px;
+  margin-bottom: 8px;
+    width: calc((100%-72px)/4);
 }
 .end {
   padding: 100px 0;
